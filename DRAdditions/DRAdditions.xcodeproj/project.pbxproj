@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2F232CB1589E85B00A57303 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F232CA1589E85B00A57303 /* UIKit.framework */; };
+		D2F232CD1589E85B00A57303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F232CC1589E85B00A57303 /* Foundation.framework */; };
+		D2F232CF1589E85B00A57303 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F232CE1589E85B00A57303 /* CoreGraphics.framework */; };
+		D2F232D51589E85B00A57303 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2F232D31589E85B00A57303 /* InfoPlist.strings */; };
+		D2F232D71589E85B00A57303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F232D61589E85B00A57303 /* main.m */; };
+		D2F232DB1589E85B00A57303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F232DA1589E85B00A57303 /* AppDelegate.m */; };
+		D2F232E51589E85B00A57303 /* ControlTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F232E41589E85B00A57303 /* ControlTabController.m */; };
+		D2F232EC1589E85B00A57303 /* ViewTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F232EA1589E85B00A57303 /* ViewTabController.xib */; };
+		D2F232EF1589E85B00A57303 /* ControlTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F232ED1589E85B00A57303 /* ControlTabController.xib */; };
+		D2FA205E158B22EC007FF3B9 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA205A158B22EC007FF3B9 /* first.png */; };
+		D2FA205F158B22EC007FF3B9 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA205B158B22EC007FF3B9 /* first@2x.png */; };
+		D2FA2060158B22EC007FF3B9 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA205C158B22EC007FF3B9 /* second.png */; };
+		D2FA2061158B22EC007FF3B9 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA205D158B22EC007FF3B9 /* second@2x.png */; };
+		FC46486E158A3DE300ED3F84 /* ViewTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC46486D158A3DE300ED3F84 /* ViewTabController.m */; };
+		FC464872158A3F3300ED3F84 /* UIColor+DRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC464871158A3F3300ED3F84 /* UIColor+DRAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D2F232C61589E85B00A57303 /* DRAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F232CA1589E85B00A57303 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2F232CC1589E85B00A57303 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2F232CE1589E85B00A57303 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D2F232D21589E85B00A57303 /* DRAdditions-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DRAdditions-Info.plist"; sourceTree = "<group>"; };
+		D2F232D41589E85B00A57303 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2F232D61589E85B00A57303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2F232D81589E85B00A57303 /* DRAdditions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DRAdditions-Prefix.pch"; sourceTree = "<group>"; };
+		D2F232D91589E85B00A57303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2F232DA1589E85B00A57303 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2F232DC1589E85B00A57303 /* ViewTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTabController.h; sourceTree = "<group>"; };
+		D2F232E31589E85B00A57303 /* ControlTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControlTabController.h; sourceTree = "<group>"; };
+		D2F232E41589E85B00A57303 /* ControlTabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControlTabController.m; sourceTree = "<group>"; };
+		D2F232EB1589E85B00A57303 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewTabController.xib; sourceTree = "<group>"; };
+		D2F232EE1589E85B00A57303 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ControlTabController.xib; sourceTree = "<group>"; };
+		D2FA205A158B22EC007FF3B9 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		D2FA205B158B22EC007FF3B9 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		D2FA205C158B22EC007FF3B9 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		D2FA205D158B22EC007FF3B9 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		FC46486D158A3DE300ED3F84 /* ViewTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTabController.m; sourceTree = "<group>"; };
+		FC464870158A3F3300ED3F84 /* UIColor+DRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DRAdditions.h"; sourceTree = "<group>"; };
+		FC464871158A3F3300ED3F84 /* UIColor+DRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DRAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2F232C31589E85B00A57303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F232CB1589E85B00A57303 /* UIKit.framework in Frameworks */,
+				D2F232CD1589E85B00A57303 /* Foundation.framework in Frameworks */,
+				D2F232CF1589E85B00A57303 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2F232BB1589E85B00A57303 = {
+			isa = PBXGroup;
+			children = (
+				D2F232D01589E85B00A57303 /* DRAdditions */,
+				D2F232C91589E85B00A57303 /* Frameworks */,
+				D2F232C71589E85B00A57303 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2F232C71589E85B00A57303 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2F232C61589E85B00A57303 /* DRAdditions.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2F232C91589E85B00A57303 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2F232CA1589E85B00A57303 /* UIKit.framework */,
+				D2F232CC1589E85B00A57303 /* Foundation.framework */,
+				D2F232CE1589E85B00A57303 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2F232D01589E85B00A57303 /* DRAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				FC46486F158A3EAF00ED3F84 /* Additions */,
+				D2F232D91589E85B00A57303 /* AppDelegate.h */,
+				D2F232DA1589E85B00A57303 /* AppDelegate.m */,
+				D2F232DC1589E85B00A57303 /* ViewTabController.h */,
+				FC46486D158A3DE300ED3F84 /* ViewTabController.m */,
+				D2F232E31589E85B00A57303 /* ControlTabController.h */,
+				D2F232E41589E85B00A57303 /* ControlTabController.m */,
+				D2F232EA1589E85B00A57303 /* ViewTabController.xib */,
+				D2F232ED1589E85B00A57303 /* ControlTabController.xib */,
+				D2F232D11589E85B00A57303 /* Supporting Files */,
+			);
+			path = DRAdditions;
+			sourceTree = "<group>";
+		};
+		D2F232D11589E85B00A57303 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2FA2059158B22EC007FF3B9 /* Images */,
+				D2F232D21589E85B00A57303 /* DRAdditions-Info.plist */,
+				D2F232D31589E85B00A57303 /* InfoPlist.strings */,
+				D2F232D61589E85B00A57303 /* main.m */,
+				D2F232D81589E85B00A57303 /* DRAdditions-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2FA2059158B22EC007FF3B9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D2FA205A158B22EC007FF3B9 /* first.png */,
+				D2FA205B158B22EC007FF3B9 /* first@2x.png */,
+				D2FA205C158B22EC007FF3B9 /* second.png */,
+				D2FA205D158B22EC007FF3B9 /* second@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FC46486F158A3EAF00ED3F84 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				FC464870158A3F3300ED3F84 /* UIColor+DRAdditions.h */,
+				FC464871158A3F3300ED3F84 /* UIColor+DRAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2F232C51589E85B00A57303 /* DRAdditions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F232F21589E85B00A57303 /* Build configuration list for PBXNativeTarget "DRAdditions" */;
+			buildPhases = (
+				D2F232C21589E85B00A57303 /* Sources */,
+				D2F232C31589E85B00A57303 /* Frameworks */,
+				D2F232C41589E85B00A57303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DRAdditions;
+			productName = DRAdditions;
+			productReference = D2F232C61589E85B00A57303 /* DRAdditions.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2F232BD1589E85B00A57303 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D2F232C01589E85B00A57303 /* Build configuration list for PBXProject "DRAdditions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2F232BB1589E85B00A57303;
+			productRefGroup = D2F232C71589E85B00A57303 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2F232C51589E85B00A57303 /* DRAdditions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2F232C41589E85B00A57303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F232D51589E85B00A57303 /* InfoPlist.strings in Resources */,
+				D2F232EC1589E85B00A57303 /* ViewTabController.xib in Resources */,
+				D2F232EF1589E85B00A57303 /* ControlTabController.xib in Resources */,
+				D2FA205E158B22EC007FF3B9 /* first.png in Resources */,
+				D2FA205F158B22EC007FF3B9 /* first@2x.png in Resources */,
+				D2FA2060158B22EC007FF3B9 /* second.png in Resources */,
+				D2FA2061158B22EC007FF3B9 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2F232C21589E85B00A57303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F232D71589E85B00A57303 /* main.m in Sources */,
+				D2F232DB1589E85B00A57303 /* AppDelegate.m in Sources */,
+				D2F232E51589E85B00A57303 /* ControlTabController.m in Sources */,
+				FC46486E158A3DE300ED3F84 /* ViewTabController.m in Sources */,
+				FC464872158A3F3300ED3F84 /* UIColor+DRAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2F232D31589E85B00A57303 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F232D41589E85B00A57303 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D2F232EA1589E85B00A57303 /* ViewTabController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F232EB1589E85B00A57303 /* en */,
+			);
+			name = ViewTabController.xib;
+			sourceTree = "<group>";
+		};
+		D2F232ED1589E85B00A57303 /* ControlTabController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F232EE1589E85B00A57303 /* en */,
+			);
+			name = ControlTabController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2F232F01589E85B00A57303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2F232F11589E85B00A57303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2F232F31589E85B00A57303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DRAdditions/DRAdditions-Prefix.pch";
+				INFOPLIST_FILE = "DRAdditions/DRAdditions-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D2F232F41589E85B00A57303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DRAdditions/DRAdditions-Prefix.pch";
+				INFOPLIST_FILE = "DRAdditions/DRAdditions-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2F232C01589E85B00A57303 /* Build configuration list for PBXProject "DRAdditions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F232F01589E85B00A57303 /* Debug */,
+				D2F232F11589E85B00A57303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F232F21589E85B00A57303 /* Build configuration list for PBXNativeTarget "DRAdditions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F232F31589E85B00A57303 /* Debug */,
+				D2F232F41589E85B00A57303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2F232BD1589E85B00A57303 /* Project object */;
+}
