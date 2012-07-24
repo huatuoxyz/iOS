@@ -16,6 +16,7 @@
 
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
+@synthesize navigationController = _navigationController;
 
 - (void)dealloc
 {
@@ -28,10 +29,13 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[[ViewTabController alloc] initWithNibName:@"ViewTabController" bundle:nil] autorelease];
+    UIViewController *viewController1 = [[[ViewTabController alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+    
+    _navigationController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    
     UIViewController *viewController2 = [[[ControlTabController alloc] initWithNibName:@"ControlTabController" bundle:nil] autorelease];
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:_navigationController, viewController2, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

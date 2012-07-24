@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D29EFCFF15BE9E9F008B37F0 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29EFCFE15BE9E9F008B37F0 /* ColorViewController.m */; };
 		D2F232CB1589E85B00A57303 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F232CA1589E85B00A57303 /* UIKit.framework */; };
 		D2F232CD1589E85B00A57303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F232CC1589E85B00A57303 /* Foundation.framework */; };
 		D2F232CF1589E85B00A57303 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F232CE1589E85B00A57303 /* CoreGraphics.framework */; };
@@ -14,7 +15,6 @@
 		D2F232D71589E85B00A57303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F232D61589E85B00A57303 /* main.m */; };
 		D2F232DB1589E85B00A57303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F232DA1589E85B00A57303 /* AppDelegate.m */; };
 		D2F232E51589E85B00A57303 /* ControlTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F232E41589E85B00A57303 /* ControlTabController.m */; };
-		D2F232EC1589E85B00A57303 /* ViewTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F232EA1589E85B00A57303 /* ViewTabController.xib */; };
 		D2F232EF1589E85B00A57303 /* ControlTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F232ED1589E85B00A57303 /* ControlTabController.xib */; };
 		D2FA205E158B22EC007FF3B9 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA205A158B22EC007FF3B9 /* first.png */; };
 		D2FA205F158B22EC007FF3B9 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FA205B158B22EC007FF3B9 /* first@2x.png */; };
@@ -25,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D29EFCFD15BE9E9F008B37F0 /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		D29EFCFE15BE9E9F008B37F0 /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 		D2F232C61589E85B00A57303 /* DRAdditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRAdditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F232CA1589E85B00A57303 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F232CC1589E85B00A57303 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,7 +40,6 @@
 		D2F232DC1589E85B00A57303 /* ViewTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTabController.h; sourceTree = "<group>"; };
 		D2F232E31589E85B00A57303 /* ControlTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControlTabController.h; sourceTree = "<group>"; };
 		D2F232E41589E85B00A57303 /* ControlTabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControlTabController.m; sourceTree = "<group>"; };
-		D2F232EB1589E85B00A57303 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewTabController.xib; sourceTree = "<group>"; };
 		D2F232EE1589E85B00A57303 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ControlTabController.xib; sourceTree = "<group>"; };
 		D2FA205A158B22EC007FF3B9 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		D2FA205B158B22EC007FF3B9 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
@@ -63,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D29EFCFC15BE9E81008B37F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D29EFCFD15BE9E9F008B37F0 /* ColorViewController.h */,
+				D29EFCFE15BE9E9F008B37F0 /* ColorViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D2F232BB1589E85B00A57303 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 		D2F232D01589E85B00A57303 /* DRAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				D29EFCFC15BE9E81008B37F0 /* View */,
 				FC46486F158A3EAF00ED3F84 /* Additions */,
 				D2F232D91589E85B00A57303 /* AppDelegate.h */,
 				D2F232DA1589E85B00A57303 /* AppDelegate.m */,
@@ -100,7 +111,6 @@
 				FC46486D158A3DE300ED3F84 /* ViewTabController.m */,
 				D2F232E31589E85B00A57303 /* ControlTabController.h */,
 				D2F232E41589E85B00A57303 /* ControlTabController.m */,
-				D2F232EA1589E85B00A57303 /* ViewTabController.xib */,
 				D2F232ED1589E85B00A57303 /* ControlTabController.xib */,
 				D2F232D11589E85B00A57303 /* Supporting Files */,
 			);
@@ -190,7 +200,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2F232D51589E85B00A57303 /* InfoPlist.strings in Resources */,
-				D2F232EC1589E85B00A57303 /* ViewTabController.xib in Resources */,
 				D2F232EF1589E85B00A57303 /* ControlTabController.xib in Resources */,
 				D2FA205E158B22EC007FF3B9 /* first.png in Resources */,
 				D2FA205F158B22EC007FF3B9 /* first@2x.png in Resources */,
@@ -211,6 +220,7 @@
 				D2F232E51589E85B00A57303 /* ControlTabController.m in Sources */,
 				FC46486E158A3DE300ED3F84 /* ViewTabController.m in Sources */,
 				FC464872158A3F3300ED3F84 /* UIColor+DRAdditions.m in Sources */,
+				D29EFCFF15BE9E9F008B37F0 /* ColorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,14 +233,6 @@
 				D2F232D41589E85B00A57303 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D2F232EA1589E85B00A57303 /* ViewTabController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2F232EB1589E85B00A57303 /* en */,
-			);
-			name = ViewTabController.xib;
 			sourceTree = "<group>";
 		};
 		D2F232ED1589E85B00A57303 /* ControlTabController.xib */ = {
