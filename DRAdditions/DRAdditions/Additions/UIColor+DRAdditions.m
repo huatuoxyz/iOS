@@ -22,7 +22,6 @@
     return [UIColor colorWithRGB:0x28a7b9];
 }
 
-
 + (UIColor *)defaultBackgroundColor {
     return [UIColor colorWithRGB:0xF3F4F6];
 }

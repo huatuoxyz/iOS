@@ -8,6 +8,7 @@
 
 #import "ViewTabController.h"
 #import "ColorViewController.h"
+#import "ButtonViewController.h"
 
 @interface ViewTabController ()
 
@@ -19,6 +20,7 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        self.title = @"View";
     }
     return self;
 }
@@ -52,7 +54,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     // Return the number of rows in the section.
-    return 10;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -62,7 +64,16 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     // Configure the cell...
-    cell.textLabel.text = @"Color";
+    switch (indexPath.row) {
+        case 0:
+            cell.textLabel.text = @"Color";
+            break;
+        case 1:
+            cell.textLabel.text = @"Button";
+            break;
+        default:
+            break;
+    }
     return cell;
 }
 
@@ -110,12 +121,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 // Navigation logic may go here. Create and push another view controller.
-
- ColorViewController *detailViewController = [[ColorViewController alloc] init];
- // ...
- // Pass the selected object to the new view controller.
- [self.navigationController pushViewController:detailViewController animated:YES];
- [detailViewController release];
+    UIViewController *detailViewController;
+    switch (indexPath.row) {
+        case 0:
+            detailViewController = [[ColorViewController alloc] init];
+            break;
+        case 1:
+            detailViewController = [[ButtonViewController alloc] init];
+            break;
+        default:
+            break;
+    }
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    [detailViewController release];
 
 }
 
