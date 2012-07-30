@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D28A33BB15C62E13000D673D /* UIPageControlDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A33BA15C62E13000D673D /* UIPageControlDemo.m */; };
+		D28A33EC15C68354000D673D /* UIDatePickerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A33EB15C68354000D673D /* UIDatePickerDemo.m */; };
+		D28A33EF15C68F34000D673D /* UISegmentedControlDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A33EE15C68F34000D673D /* UISegmentedControlDemo.m */; };
+		D28A33F215C68F4B000D673D /* UISliderDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A33F115C68F4A000D673D /* UISliderDemo.m */; };
+		D28A33F515C68F5F000D673D /* UISwitchDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A33F415C68F5F000D673D /* UISwitchDemo.m */; };
+		D28A33F815C68F72000D673D /* UITextFieldDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A33F715C68F71000D673D /* UITextFieldDemo.m */; };
 		FC2D658515C5574400969F43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2D658415C5574400969F43 /* UIKit.framework */; };
 		FC2D658715C5574400969F43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2D658615C5574400969F43 /* Foundation.framework */; };
 		FC2D658915C5574400969F43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2D658815C5574400969F43 /* CoreGraphics.framework */; };
@@ -21,6 +27,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D28A33B915C62E13000D673D /* UIPageControlDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPageControlDemo.h; sourceTree = "<group>"; };
+		D28A33BA15C62E13000D673D /* UIPageControlDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPageControlDemo.m; sourceTree = "<group>"; };
+		D28A33EA15C68354000D673D /* UIDatePickerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerDemo.h; sourceTree = "<group>"; };
+		D28A33EB15C68354000D673D /* UIDatePickerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerDemo.m; sourceTree = "<group>"; };
+		D28A33ED15C68F34000D673D /* UISegmentedControlDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISegmentedControlDemo.h; sourceTree = "<group>"; };
+		D28A33EE15C68F34000D673D /* UISegmentedControlDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISegmentedControlDemo.m; sourceTree = "<group>"; };
+		D28A33F015C68F4A000D673D /* UISliderDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISliderDemo.h; sourceTree = "<group>"; };
+		D28A33F115C68F4A000D673D /* UISliderDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISliderDemo.m; sourceTree = "<group>"; };
+		D28A33F315C68F5F000D673D /* UISwitchDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISwitchDemo.h; sourceTree = "<group>"; };
+		D28A33F415C68F5F000D673D /* UISwitchDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISwitchDemo.m; sourceTree = "<group>"; };
+		D28A33F615C68F71000D673D /* UITextFieldDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldDemo.h; sourceTree = "<group>"; };
+		D28A33F715C68F71000D673D /* UITextFieldDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldDemo.m; sourceTree = "<group>"; };
 		FC2D658015C5574400969F43 /* DRUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2D658415C5574400969F43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FC2D658615C5574400969F43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,6 +134,18 @@
 			children = (
 				FC2D65BD15C55FDD00969F43 /* UIButtonDemo.h */,
 				FC2D65BE15C55FDD00969F43 /* UIButtonDemo.m */,
+				D28A33B915C62E13000D673D /* UIPageControlDemo.h */,
+				D28A33BA15C62E13000D673D /* UIPageControlDemo.m */,
+				D28A33EA15C68354000D673D /* UIDatePickerDemo.h */,
+				D28A33EB15C68354000D673D /* UIDatePickerDemo.m */,
+				D28A33ED15C68F34000D673D /* UISegmentedControlDemo.h */,
+				D28A33EE15C68F34000D673D /* UISegmentedControlDemo.m */,
+				D28A33F015C68F4A000D673D /* UISliderDemo.h */,
+				D28A33F115C68F4A000D673D /* UISliderDemo.m */,
+				D28A33F315C68F5F000D673D /* UISwitchDemo.h */,
+				D28A33F415C68F5F000D673D /* UISwitchDemo.m */,
+				D28A33F615C68F71000D673D /* UITextFieldDemo.h */,
+				D28A33F715C68F71000D673D /* UITextFieldDemo.m */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -200,6 +230,12 @@
 				FC2D65C515C56D9500969F43 /* UIActionSheetDemo.m in Sources */,
 				FC2D65C815C584A000969F43 /* ControlController.m in Sources */,
 				FC2D65C915C584A000969F43 /* ViewController.m in Sources */,
+				D28A33BB15C62E13000D673D /* UIPageControlDemo.m in Sources */,
+				D28A33EC15C68354000D673D /* UIDatePickerDemo.m in Sources */,
+				D28A33EF15C68F34000D673D /* UISegmentedControlDemo.m in Sources */,
+				D28A33F215C68F4B000D673D /* UISliderDemo.m in Sources */,
+				D28A33F515C68F5F000D673D /* UISwitchDemo.m in Sources */,
+				D28A33F815C68F72000D673D /* UITextFieldDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +341,7 @@
 				FC2D65AE15C5574400969F43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

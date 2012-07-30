@@ -8,6 +8,8 @@
 
 #import "ControlController.h"
 #import "UIButtonDemo.h"
+#import "UIPageControlDemo.h"
+#import "UIDatePickerDemo.h"
 
 @interface ControlController ()
 
@@ -38,12 +40,26 @@
     
     controls = [[NSMutableArray alloc] init];
     
-    // UIAlert
+    // UIButton
 	UIButtonDemo *alertController = [[UIButtonDemo alloc] init];
 	alertController.title = @"UIButton";
 	[alertController setHidesBottomBarWhenPushed:YES];
 	[self.controls addObject:alertController];
 	[alertController release];
+    
+    // UIPageControl
+	UIPageControlDemo *pageControl = [[UIPageControlDemo alloc] init];
+	pageControl.title = @"UIPageControl";
+	[pageControl setHidesBottomBarWhenPushed:YES];
+	[self.controls addObject:pageControl];
+	[pageControl release];
+
+    // UIP
+	UIDatePickerDemo *datePicker = [[UIDatePickerDemo alloc] init];
+	datePicker.title = @"UIDatePicker";
+	[datePicker setHidesBottomBarWhenPushed:YES];
+	[self.controls addObject:datePicker];
+	[datePicker release];
 
 }
 
