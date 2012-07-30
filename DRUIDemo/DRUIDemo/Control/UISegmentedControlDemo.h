@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UISegmentedControlDemo : UIViewController
+@interface UISegmentedControlDemo : UIViewController{
+    NSArray *items;
+}
 
 @end

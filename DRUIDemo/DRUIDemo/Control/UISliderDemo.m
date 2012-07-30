@@ -27,6 +27,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    UISlider *sl = [[[UISlider alloc] initWithFrame:CGRectMake((320-200)/2, 50, 200, 10)] autorelease];
+    sl.minimumValue = 0.0;
+    sl.maximumValue = 500.0;
+    sl.value = 250.0;
+    [sl addTarget:self action:@selector(changedValue:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:sl];
 }
 
 - (void)viewDidUnload
@@ -38,6 +45,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(void)changedValue:(UISlider*)slider
+{
+    self.title = [NSString stringWithFormat:@"%f", [slider value]];
 }
 
 @end

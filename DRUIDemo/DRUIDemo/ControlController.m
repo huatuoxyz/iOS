@@ -10,6 +10,10 @@
 #import "UIButtonDemo.h"
 #import "UIPageControlDemo.h"
 #import "UIDatePickerDemo.h"
+#import "UISegmentedControlDemo.h"
+#import "UISliderDemo.h"
+#import "UISwitchDemo.h"
+#import "UITextFieldDemo.h"
 
 @interface ControlController ()
 
@@ -54,13 +58,43 @@
 	[self.controls addObject:pageControl];
 	[pageControl release];
 
-    // UIP
+    // UIDatePicker
 	UIDatePickerDemo *datePicker = [[UIDatePickerDemo alloc] init];
 	datePicker.title = @"UIDatePicker";
 	[datePicker setHidesBottomBarWhenPushed:YES];
 	[self.controls addObject:datePicker];
 	[datePicker release];
+    
+    // UISegmentedControl
+	UISegmentedControlDemo *segmentedControl = [[UISegmentedControlDemo alloc] init];
+	segmentedControl.title = @"UISegmentedControl";
+	[segmentedControl setHidesBottomBarWhenPushed:YES];
+	[self.controls addObject:segmentedControl];
+	[segmentedControl release];
+    
+    // UISlider
+    UISliderDemo *sliderDemo = [[UISliderDemo alloc] init];
+	sliderDemo.title = @"UISlider";
+	[sliderDemo setHidesBottomBarWhenPushed:YES];
+	[self.controls addObject:sliderDemo];
+	[sliderDemo release];
+    
+    // UISwitch
+    UISwitchDemo *switchDemo = [[UISwitchDemo alloc] init];
+	switchDemo.title = @"UISwitch";
+	[switchDemo setHidesBottomBarWhenPushed:YES];
+	[self.controls addObject:switchDemo];
+	[switchDemo release];
+    
+    // UISlider
+    UITextFieldDemo *textFieldDemo = [[UITextFieldDemo alloc] init];
+	textFieldDemo.title = @"UITextField";
+	[textFieldDemo setHidesBottomBarWhenPushed:YES];
+	[self.controls addObject:textFieldDemo];
+	[textFieldDemo release];
+    
 
+    
 }
 
 - (void)viewDidUnload
@@ -68,9 +102,6 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    
-
-    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

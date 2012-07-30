@@ -27,17 +27,30 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    int selectedIndex = 2;
+    items = [[NSArray arrayWithObjects:@"iPod", @"iPhone", @"iPad", @"iMac", nil] retain];
+    UISegmentedControl *seg = [[[UISegmentedControl alloc] initWithItems:items] autorelease];
+    seg.frame = CGRectMake((320-250)/2, 50, 250, 30);
+    seg.segmentedControlStyle = UISegmentedControlStyleBar;
+    seg.selectedSegmentIndex = selectedIndex;
+    [seg addTarget:self action:@selector(selectedSegment:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:seg];
+    self.title = [items objectAtIndex:selectedIndex];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+-(void)selectedSegment:(UISegmentedControl*)seg{
+    self.title = [NSString stringWithFormat:@"%@", [items objectAtIndex:[seg selectedSegmentIndex]]];
+}
+
 
 @end

@@ -27,6 +27,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    UITextField *tf =
+    [[[UITextField alloc] initWithFrame:CGRectMake((320-200)/2, 50, 200, 30)] autorelease];
+    tf.borderStyle = UITextBorderStyleRoundedRect;
+    tf.textColor = [UIColor darkGrayColor];
+    tf.placeholder = @"input";
+    tf.clearButtonMode = UITextFieldViewModeAlways;
+    [tf addTarget:self action:@selector(editingDidEndOnExit:) forControlEvents:UIControlEventEditingDidEndOnExit];
+    [self.view addSubview:tf];
 }
 
 - (void)viewDidUnload
@@ -38,6 +47,10 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(void)editingDidEndOnExit:(UITextField*)textfield{
+    self.title = textfield.text;
 }
 
 @end

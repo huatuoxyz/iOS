@@ -27,6 +27,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    UISwitch *sw = [[[UISwitch alloc] init] autorelease];
+    sw.center = CGPointMake(160, 100);
+    sw.on = YES;
+    [sw addTarget:self action:@selector(changedValue:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:sw];
 }
 
 - (void)viewDidUnload
@@ -38,6 +44,10 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(void)changedValue:(UISwitch*)_switch{
+    self.title = [NSString stringWithFormat:@"%d", [_switch isOn]];
 }
 
 @end
