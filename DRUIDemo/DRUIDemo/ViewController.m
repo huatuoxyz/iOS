@@ -9,6 +9,14 @@
 #import "ViewController.h"
 #import "UIAlertViewDemo.h"
 #import "UIActionSheetDemo.h"
+#import "UITextViewDemo.h"
+#import "UIProgressViewDemo.h"
+#import "UIWebViewDemo.h"
+#import "UILabelDemo.h"
+#import "UIImageViewDemo.h"
+#import "UIPickerViewDemo.h"
+#import "UIScrollViewDemo.h"
+#import "UITableViewDemo.h"
 
 @interface ViewController ()
 
@@ -16,7 +24,7 @@
 
 @implementation ViewController
 
-@synthesize menus;
+@synthesize views;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,28 +39,80 @@
 {
     [super viewDidLoad];
 
-    self.menus = [[NSMutableArray alloc] init];
+    self.views = [[NSMutableArray alloc] init];
 
     // UIAlert
 	UIAlertViewDemo *alertController = [[UIAlertViewDemo alloc]initWithStyle:UITableViewCellStyleValue1];
 	alertController.title = @"UIAlert";
 	[alertController setHidesBottomBarWhenPushed:YES];
-	[self.menus addObject:alertController];
+	[self.views addObject:alertController];
 	[alertController release];
 	
 	// UIActionSheet
 	UIActionSheetDemo *actionSheetController = [[UIActionSheetDemo alloc]initWithStyle:UITableViewCellStyleValue1];
 	actionSheetController.title = @"UIActionSheet";
 	[actionSheetController setHidesBottomBarWhenPushed:YES];
-	[self.menus addObject:actionSheetController];
+	[self.views addObject:actionSheetController];
 	[actionSheetController release];
 	
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // UITextView
+	UITextViewDemo *textViewDemo = [[UITextViewDemo alloc] init];
+	textViewDemo.title = @"UITextView";
+	[textViewDemo setHidesBottomBarWhenPushed:YES];
+	[self.views addObject:textViewDemo];
+	[textViewDemo release];
+	
+    
+    // UIProgressView
+	UIProgressViewDemo *progressViewDemo = [[UIProgressViewDemo alloc] init];
+	progressViewDemo.title = @"UIProgressView";
+	[progressViewDemo setHidesBottomBarWhenPushed:YES];
+	[self.views addObject:progressViewDemo];
+	[progressViewDemo release];
+    
+    
+    //UIWebView
+    UIWebViewDemo *webViewDemo = [[UIWebViewDemo alloc] init];
+	webViewDemo.title = @"UIWebView";
+	[webViewDemo setHidesBottomBarWhenPushed:YES];
+	[self.views addObject:webViewDemo];
+	[webViewDemo release];
+    
+    //UILabel
+    UILabelDemo *labelDemo = [[UILabelDemo alloc] init];
+	labelDemo.title = @"UILabelDemo";
+	[labelDemo setHidesBottomBarWhenPushed:YES];
+	[self.views addObject:labelDemo];
+	[labelDemo release];
+    
+    //UIImageView
+    UIImageViewDemo *imageViewDemo = [[UIImageViewDemo alloc] init];
+	imageViewDemo.title = @"UIImageView";
+	[imageViewDemo setHidesBottomBarWhenPushed:YES];
+	[self.views addObject:imageViewDemo];
+	[imageViewDemo release];
+    
+    //UIPickerView
+    UIPickerViewDemo *pickerViewDemo = [[UIPickerViewDemo alloc] init];
+	pickerViewDemo.title = @"UIPickerView";
+	[pickerViewDemo setHidesBottomBarWhenPushed:YES];
+	[self.views addObject:pickerViewDemo];
+	[pickerViewDemo release];
+    
+    //UIScrollView
+    UIScrollViewDemo *scrollViewDemo = [[UIScrollViewDemo alloc] init];
+	scrollViewDemo.title = @"UIScrollView";
+	[scrollViewDemo setHidesBottomBarWhenPushed:YES];
+	[self.views addObject:scrollViewDemo];
+	[scrollViewDemo release];
+    
+    //UITableView
+    UITableViewDemo *tableViewDemo = [[UITableViewDemo alloc] init];
+	tableViewDemo.title = @"UITableView";
+	[tableViewDemo setHidesBottomBarWhenPushed:YES];
+	[self.views addObject:tableViewDemo];
+	[tableViewDemo release];
+    
 }
 
 - (void)viewDidUnload
@@ -78,7 +138,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.menus count];
+    return [self.views count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -89,7 +149,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     // Configure the cell...
-    UIViewController *controller = [menus objectAtIndex:indexPath.row];
+    UIViewController *controller = [views objectAtIndex:indexPath.row];
 	cell.textLabel.text = controller.title;
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
@@ -102,7 +162,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	NSUInteger row = [indexPath row];
-	UIViewController *nextController = [self.menus objectAtIndex:row];
+	UIViewController *nextController = [self.views objectAtIndex:row];
 	[self.navigationController pushViewController:nextController animated:YES];
 }
 

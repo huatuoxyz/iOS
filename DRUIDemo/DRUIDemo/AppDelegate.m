@@ -17,6 +17,7 @@
 @synthesize controlNavController = _controlNavController;
 @synthesize viewMainViewController = _viewMainViewController;
 @synthesize controlMainViewController = _controlMainViewController;
+@synthesize responderController = _responderController;
 
 - (void)dealloc
 {
@@ -45,7 +46,14 @@
 	[controlItem release];
 	[controllers addObject:_controlNavController];
 	
-	_tabBarController = [[UITabBarController alloc]init];
+    _responderController = [[ResponderController alloc]init];
+    _responderNavController = [[UINavigationController alloc]initWithRootViewController:_responderController];
+	UITabBarItem *responderItem = [[UITabBarItem alloc]initWithTitle:@"Responder" image:nil tag:0];
+	[_responderNavController setTabBarItem:responderItem];
+	[responderItem release];
+	[controllers addObject:_responderNavController];
+	
+    _tabBarController = [[UITabBarController alloc]init];
 	_tabBarController.viewControllers = controllers;
 	[_tabBarController isViewLoaded];
 	

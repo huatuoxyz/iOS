@@ -13,6 +13,17 @@
 		D28A33F215C68F4B000D673D /* UISliderDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A33F115C68F4A000D673D /* UISliderDemo.m */; };
 		D28A33F515C68F5F000D673D /* UISwitchDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A33F415C68F5F000D673D /* UISwitchDemo.m */; };
 		D28A33F815C68F72000D673D /* UITextFieldDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A33F715C68F71000D673D /* UITextFieldDemo.m */; };
+		D2FD183715C7AEF000ACFA9A /* UITextViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD183615C7AEF000ACFA9A /* UITextViewDemo.m */; };
+		D2FD183B15C7B6DE00ACFA9A /* UIProgressViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD183A15C7B6DE00ACFA9A /* UIProgressViewDemo.m */; };
+		D2FD184515C7BCBE00ACFA9A /* UIWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD184415C7BCBE00ACFA9A /* UIWebViewDemo.m */; };
+		D2FD184815C7BEA100ACFA9A /* UILabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD184715C7BEA100ACFA9A /* UILabelDemo.m */; };
+		D2FD184B15C7C02200ACFA9A /* UIImageViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD184A15C7C02200ACFA9A /* UIImageViewDemo.m */; };
+		D2FD184E15C7C06700ACFA9A /* UIPickerViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD184D15C7C06600ACFA9A /* UIPickerViewDemo.m */; };
+		D2FD185115C7C16500ACFA9A /* boa.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FD185015C7C16500ACFA9A /* boa.png */; };
+		D2FD185415C7C67C00ACFA9A /* UIScrollViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD185315C7C67C00ACFA9A /* UIScrollViewDemo.m */; };
+		D2FD185715C7C68D00ACFA9A /* UITableViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD185615C7C68C00ACFA9A /* UITableViewDemo.m */; };
+		D2FD185A15C7C70900ACFA9A /* ResponderController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD185915C7C70800ACFA9A /* ResponderController.m */; };
+		D2FD186615C7E44A00ACFA9A /* UIApplicationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD186515C7E44A00ACFA9A /* UIApplicationDemo.m */; };
 		FC2D658515C5574400969F43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2D658415C5574400969F43 /* UIKit.framework */; };
 		FC2D658715C5574400969F43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2D658615C5574400969F43 /* Foundation.framework */; };
 		FC2D658915C5574400969F43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2D658815C5574400969F43 /* CoreGraphics.framework */; };
@@ -24,6 +35,8 @@
 		FC2D65C515C56D9500969F43 /* UIActionSheetDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2D65C415C56D9500969F43 /* UIActionSheetDemo.m */; };
 		FC2D65C815C584A000969F43 /* ControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2D65C615C584A000969F43 /* ControlController.m */; };
 		FC2D65C915C584A000969F43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2D65C715C584A000969F43 /* ViewController.m */; };
+		FCA304E715C8206C0051CB6D /* UIViewControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA304E615C8206C0051CB6D /* UIViewControllerDemo.m */; };
+		FCA304EA15C821060051CB6D /* UIViewControllerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCA304E915C821060051CB6D /* UIViewControllerDemo.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +52,27 @@
 		D28A33F415C68F5F000D673D /* UISwitchDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISwitchDemo.m; sourceTree = "<group>"; };
 		D28A33F615C68F71000D673D /* UITextFieldDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldDemo.h; sourceTree = "<group>"; };
 		D28A33F715C68F71000D673D /* UITextFieldDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldDemo.m; sourceTree = "<group>"; };
+		D2FD183515C7AEF000ACFA9A /* UITextViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewDemo.h; sourceTree = "<group>"; };
+		D2FD183615C7AEF000ACFA9A /* UITextViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewDemo.m; sourceTree = "<group>"; };
+		D2FD183915C7B6DE00ACFA9A /* UIProgressViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProgressViewDemo.h; sourceTree = "<group>"; };
+		D2FD183A15C7B6DE00ACFA9A /* UIProgressViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIProgressViewDemo.m; sourceTree = "<group>"; };
+		D2FD184315C7BCBE00ACFA9A /* UIWebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewDemo.h; sourceTree = "<group>"; };
+		D2FD184415C7BCBE00ACFA9A /* UIWebViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewDemo.m; sourceTree = "<group>"; };
+		D2FD184615C7BEA100ACFA9A /* UILabelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelDemo.h; sourceTree = "<group>"; };
+		D2FD184715C7BEA100ACFA9A /* UILabelDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelDemo.m; sourceTree = "<group>"; };
+		D2FD184915C7C02100ACFA9A /* UIImageViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewDemo.h; sourceTree = "<group>"; };
+		D2FD184A15C7C02200ACFA9A /* UIImageViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewDemo.m; sourceTree = "<group>"; };
+		D2FD184C15C7C06600ACFA9A /* UIPickerViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPickerViewDemo.h; sourceTree = "<group>"; };
+		D2FD184D15C7C06600ACFA9A /* UIPickerViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPickerViewDemo.m; sourceTree = "<group>"; };
+		D2FD185015C7C16500ACFA9A /* boa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boa.png; sourceTree = "<group>"; };
+		D2FD185215C7C67B00ACFA9A /* UIScrollViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScrollViewDemo.h; sourceTree = "<group>"; };
+		D2FD185315C7C67C00ACFA9A /* UIScrollViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewDemo.m; sourceTree = "<group>"; };
+		D2FD185515C7C68C00ACFA9A /* UITableViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewDemo.h; sourceTree = "<group>"; };
+		D2FD185615C7C68C00ACFA9A /* UITableViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewDemo.m; sourceTree = "<group>"; };
+		D2FD185815C7C70800ACFA9A /* ResponderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponderController.h; sourceTree = "<group>"; };
+		D2FD185915C7C70800ACFA9A /* ResponderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponderController.m; sourceTree = "<group>"; };
+		D2FD186415C7E44A00ACFA9A /* UIApplicationDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIApplicationDemo.h; sourceTree = "<group>"; };
+		D2FD186515C7E44A00ACFA9A /* UIApplicationDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIApplicationDemo.m; sourceTree = "<group>"; };
 		FC2D658015C5574400969F43 /* DRUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2D658415C5574400969F43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FC2D658615C5574400969F43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,6 +93,9 @@
 		FC2D65C415C56D9500969F43 /* UIActionSheetDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIActionSheetDemo.m; sourceTree = "<group>"; };
 		FC2D65C615C584A000969F43 /* ControlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlController.m; sourceTree = "<group>"; };
 		FC2D65C715C584A000969F43 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FCA304E515C8206C0051CB6D /* UIViewControllerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerDemo.h; sourceTree = "<group>"; };
+		FCA304E615C8206C0051CB6D /* UIViewControllerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerDemo.m; sourceTree = "<group>"; };
+		FCA304E915C821060051CB6D /* UIViewControllerDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIViewControllerDemo.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +112,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2FD184F15C7C16500ACFA9A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D2FD185015C7C16500ACFA9A /* boa.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		D2FD185B15C7CCE100ACFA9A /* Responder */ = {
+			isa = PBXGroup;
+			children = (
+				D2FD186415C7E44A00ACFA9A /* UIApplicationDemo.h */,
+				D2FD186515C7E44A00ACFA9A /* UIApplicationDemo.m */,
+				FCA304E515C8206C0051CB6D /* UIViewControllerDemo.h */,
+				FCA304E615C8206C0051CB6D /* UIViewControllerDemo.m */,
+			);
+			path = Responder;
+			sourceTree = "<group>";
+		};
 		FC2D657515C5574400969F43 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +161,7 @@
 		FC2D658A15C5574400969F43 /* DRUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D2FD185B15C7CCE100ACFA9A /* Responder */,
 				FC2D65B515C55BAD00969F43 /* Control */,
 				FC2D65B615C55BAD00969F43 /* View */,
 				FC2D659315C5574400969F43 /* AppDelegate.h */,
@@ -114,6 +171,8 @@
 				FC2D65C715C584A000969F43 /* ViewController.m */,
 				FC2D65B215C559E100969F43 /* ControlController.h */,
 				FC2D65C615C584A000969F43 /* ControlController.m */,
+				D2FD185815C7C70800ACFA9A /* ResponderController.h */,
+				D2FD185915C7C70800ACFA9A /* ResponderController.m */,
 			);
 			path = DRUIDemo;
 			sourceTree = "<group>";
@@ -121,10 +180,12 @@
 		FC2D658B15C5574400969F43 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2FD184F15C7C16500ACFA9A /* images */,
 				FC2D658C15C5574400969F43 /* DRUIDemo-Info.plist */,
 				FC2D658D15C5574400969F43 /* InfoPlist.strings */,
 				FC2D659015C5574400969F43 /* main.m */,
 				FC2D659215C5574400969F43 /* DRUIDemo-Prefix.pch */,
+				FCA304E915C821060051CB6D /* UIViewControllerDemo.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,6 +218,22 @@
 				FC2D65C015C56CEC00969F43 /* UIAlertViewDemo.m */,
 				FC2D65B715C55BAD00969F43 /* UIActionSheetDemo.h */,
 				FC2D65C415C56D9500969F43 /* UIActionSheetDemo.m */,
+				D2FD183515C7AEF000ACFA9A /* UITextViewDemo.h */,
+				D2FD183615C7AEF000ACFA9A /* UITextViewDemo.m */,
+				D2FD183915C7B6DE00ACFA9A /* UIProgressViewDemo.h */,
+				D2FD183A15C7B6DE00ACFA9A /* UIProgressViewDemo.m */,
+				D2FD184315C7BCBE00ACFA9A /* UIWebViewDemo.h */,
+				D2FD184415C7BCBE00ACFA9A /* UIWebViewDemo.m */,
+				D2FD184615C7BEA100ACFA9A /* UILabelDemo.h */,
+				D2FD184715C7BEA100ACFA9A /* UILabelDemo.m */,
+				D2FD184915C7C02100ACFA9A /* UIImageViewDemo.h */,
+				D2FD184A15C7C02200ACFA9A /* UIImageViewDemo.m */,
+				D2FD184C15C7C06600ACFA9A /* UIPickerViewDemo.h */,
+				D2FD184D15C7C06600ACFA9A /* UIPickerViewDemo.m */,
+				D2FD185215C7C67B00ACFA9A /* UIScrollViewDemo.h */,
+				D2FD185315C7C67C00ACFA9A /* UIScrollViewDemo.m */,
+				D2FD185515C7C68C00ACFA9A /* UITableViewDemo.h */,
+				D2FD185615C7C68C00ACFA9A /* UITableViewDemo.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2D658F15C5574400969F43 /* InfoPlist.strings in Resources */,
+				D2FD185115C7C16500ACFA9A /* boa.png in Resources */,
+				FCA304EA15C821060051CB6D /* UIViewControllerDemo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +315,17 @@
 				D28A33F215C68F4B000D673D /* UISliderDemo.m in Sources */,
 				D28A33F515C68F5F000D673D /* UISwitchDemo.m in Sources */,
 				D28A33F815C68F72000D673D /* UITextFieldDemo.m in Sources */,
+				D2FD183715C7AEF000ACFA9A /* UITextViewDemo.m in Sources */,
+				D2FD183B15C7B6DE00ACFA9A /* UIProgressViewDemo.m in Sources */,
+				D2FD184515C7BCBE00ACFA9A /* UIWebViewDemo.m in Sources */,
+				D2FD184815C7BEA100ACFA9A /* UILabelDemo.m in Sources */,
+				D2FD184B15C7C02200ACFA9A /* UIImageViewDemo.m in Sources */,
+				D2FD184E15C7C06700ACFA9A /* UIPickerViewDemo.m in Sources */,
+				D2FD185415C7C67C00ACFA9A /* UIScrollViewDemo.m in Sources */,
+				D2FD185715C7C68D00ACFA9A /* UITableViewDemo.m in Sources */,
+				D2FD185A15C7C70900ACFA9A /* ResponderController.m in Sources */,
+				D2FD186615C7E44A00ACFA9A /* UIApplicationDemo.m in Sources */,
+				FCA304E715C8206C0051CB6D /* UIViewControllerDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

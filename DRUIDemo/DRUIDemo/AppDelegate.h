@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 #import "ControlController.h"
+#import "ResponderController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 
@@ -17,8 +18,10 @@
 
 @property (strong, nonatomic) UINavigationController *viewNavController;
 @property (strong, nonatomic) UINavigationController *controlNavController;
+@property (strong, nonatomic) UINavigationController *responderNavController;
 @property (strong, nonatomic) ViewController *viewMainViewController;
 @property (strong, nonatomic) ControlController *controlMainViewController;
+@property (strong, nonatomic) ResponderController *responderController;
 
 @end
 
